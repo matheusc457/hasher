@@ -1,13 +1,12 @@
 use crate::hasher::HashResult;
 
 pub fn print_results(filename: &str, results: &[HashResult]) {
-    println!("\n{}", filename);
-    let last = results.len() - 1;
-    for (i, result) in results.iter().enumerate() {
-        let prefix = if i == last { "└──" } else { "├──" };
-        println!("{}  {:<12} {}", prefix, result.algorithm, result.hash);
+    println!("\n{}\n", filename);
+    for result in results {
+        println!("  {}", result.algorithm);
+        println!("  {}", result.hash);
+        println!("\n----------------------------------------\n");
     }
-    println!();
 }
 
 pub fn print_algorithms(algorithms: &[&str]) {
@@ -27,4 +26,3 @@ pub fn print_verify_fail(algo: &str, expected: &str, found: &str) {
     println!("  Expected:  {}", expected);
     println!("  Found:     {}\n", found);
 }
-
