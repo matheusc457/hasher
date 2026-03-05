@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.rs": "48ec1438e114507f538fd4292401a9a491b59ca4c848a6d88f736c8594332dae",
+    "manifest.rs": "9f117fafdf10f4b0bd74c2b41f6b4eff4e9c43dabf0f5994cf893f6669dc9340",
+    "hasher.rs": "7d4d760e5bb7035a55d1738acb4b5791f0d7a41162067a2a704dae71c1ef6d72",
+    "cli.rs": "cf3f3195cf0ca411444cda4df03da1a4e6d86d70fac64b5348de6c6dddee599f",
+    "algorithms.rs": "18c5126d8c9f9dbd2a63fbc72e8386bc812d0e661bcaebab3a7f543c20a60ee6",
+    "output.rs": "3beb259551802dad72f3636e46c0aa321077a87eac6af477207996030451e61a"
+  },
+  "algorithm": "SHA256"
+}
