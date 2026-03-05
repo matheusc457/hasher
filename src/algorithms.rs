@@ -1,10 +1,10 @@
 use blake2::{Blake2b512, Blake2s256, Digest as Blake2Digest};
 use crc32fast::Hasher as Crc32Hasher;
 use hex::encode;
-use md5::{Digest as Md5Digest, Md5};
-use ripemd::{Digest as RipemdDigest, Ripemd128, Ripemd160, Ripemd256};
-use sha2::{Digest as Sha2Digest, Sha224, Sha256, Sha384, Sha512};
-use sha3::{Digest as Sha3Digest, Sha3_256, Sha3_384, Sha3_512};
+use md5::Md5;
+use ripemd::{Ripemd128, Ripemd160, Ripemd256};
+use sha2::{Sha224, Sha256, Sha384, Sha512};
+use sha3::{Sha3_256, Sha3_384, Sha3_512};
 
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub enum Algorithm {

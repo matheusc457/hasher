@@ -21,8 +21,3 @@ pub fn hash_file(path: &Path, algorithms: Vec<Algorithm>) -> Result<Vec<HashResu
 
     Ok(results)
 }
-
-pub fn hash_file_all(path: &Path) -> Result<Vec<HashResult>, String> {
-    hash_file(path, Algorithm::all())
-}
-
